@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Scroll down to explore more</p>
+    </section>
+
+    <!-- About Section with Profile Picture -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <img src="images/profile.jpg" alt="My Profile Picture" class="profile-pic">
+        <p>Hello! I'm Priyanshu Chauhan as a cloud computing enthusiast, I specialize in designing scalable, secure, and efficient cloud-based solutions. With experience in AWS, Azure, and containerization technologies like Docker and Kubernetes, I bring innovative ideas to life in the cloud. I enjoy problem-solving and continually seek opportunities to learn new tools and improve my skills. My expertise includes architecting robust infrastructure, optimizing resource utilization, and ensuring seamless user experiences. Outside of work, I enjoy gaming and look forward to collaborating with others to build something amazing.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <ul>
+            <li>AWS</li>
+            <li>AZURE</li>
+            <li>Virtualization</li>
+            <li>Google Cloud</li>
+            <li>AI</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section with Form -->
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <span class="error" id="nameError"></span>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <span class="error" id="emailError"></span>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <span class="error" id="messageError"></span>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+</body>
+</html>
